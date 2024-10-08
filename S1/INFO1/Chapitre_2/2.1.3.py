@@ -2,7 +2,7 @@ L = list(range(1,101))
 #L = [1,6,189,1,4,6,8,0]
 
 #Moyenne de la liste 
-def moyenneListe(L):
+def moyenneListe(L: list):
     s = 0 
     for elt in L:
         s = s + elt
@@ -12,7 +12,7 @@ print(f"La moyenne de cette liste est: {moyenneListe(L)}")
 print(f"cette liste contient {len(L)} éléments")
 
 #Nombre Pairs
-def nbPairsListe(L):
+def nbPairsListe(L: list):
     s = 0
     for elt in L:
         if elt % 2 == 0:
@@ -23,7 +23,7 @@ print(f"Cette liste contient {nbPairsListe(L)} nombres pairs")
 
 #Maximum 
 
-def maximumListe(L):
+def maximumListe(L: list):
     s = 0
     for elt in L: 
         if elt > s:
