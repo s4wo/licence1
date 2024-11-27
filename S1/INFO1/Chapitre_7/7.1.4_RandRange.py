@@ -16,6 +16,6 @@ print(obtenirUnNombre(6))
 
 def obtenirUnDouble(n):
     c = 0
-    lancerDe() = c
+    lancerDe() == c
     
 
