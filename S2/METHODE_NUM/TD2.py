@@ -46,6 +46,24 @@ def produit(a):
 
 print(produit(a))
 
+# Ex1.4
 
+UV = 10 - 390
+visible = 390 - 750
+IR =    750 - 10**5
+
+def wavelength():
+    x = float(input('Donnez une longueur d\'onde entre [10, 10**5]:'))
+    if x >= 10 and x <= 390 :
+        return print(x,'Appartient au spectre des UV')
+    elif x > 390 and x < 750:
+        return print(x, 'Appartient au spectre de la lumière visible')
+    elif x > 750 and x <= (10**5): 
+        return print(x, 'Appartient au spectre des Infrarouges')
+    else:
+        return print(x, 'N\'appartiens ni aux UV, ni à la lumière visible, ni aux infrarouges')
+    
+    
+wavelength()
 
 
