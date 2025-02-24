@@ -46,7 +46,7 @@ def produit(a):
 
 print(produit(a))
 
-# Ex1.4
+# Ex1.4 Wavelength
 
 UV = 10 - 390
 visible = 390 - 750
@@ -67,5 +67,22 @@ def wavelength():
 wavelength()
 
 
+# Ex1.6 Polynomes
 
+
+def polynome():
+    a = float(input('Entrez ax^2 = '))
+    b = float(input('Entrez bx = '))
+    c = float(input('Entrez c = '))
+    d = (b**2)-(4*(a*c))
+    if d > 0 :
+        x1 = (-b-(d**0.5))/2*a
+        x2 = (-b+(d**0.5))/2*a
+        return print('x1 = ', x1, 'et', 'x2 = ', x2)
+    if d == 0 :
+        x0 = -(b)/(2*a)
+        return print('x0 = ', x0)
+    
+    
+polynome()
 
